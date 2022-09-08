@@ -1,0 +1,23 @@
+.table {
+  border: 1px solid black;
+  width: 100%;
+  height: 100%;
+}
+
+.table__headerRow {
+  background-color: goldenrod;
+  height: 50px;
+}
+
+.table__contentRow {
+  border: 1px solid black;
+  text-align: center;
+}
+
+.table-headerRow__body {
+  border: 1px solid black;
+}
+
+.table-contentRow__body {
+  border: 1px solid black;
+}
