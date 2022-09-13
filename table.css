@@ -1,36 +1,40 @@
+body {
+  margin: 0;
+}
+
 .table {
   border: 1px solid black;
+  border-collapse: collapse;
   width: 100%;
   height: 100%;
-
 }
 
 .table__headerRow {
   background-color: goldenrod;
   height: 50px;
+  min-width: 100px;
 }
 
 .table__contentRow {
-  border: 1px solid black;
   text-align: center;
 }
 
 .table-headerRow__body {
   border: 1px solid black;
+  border-left: 1px hidden black;
 }
 
-.table-contentRow__name {
+.table-contentRow__cell {
   border: 1px solid black;
+  min-width: 100px;
+  border-left: 1px hidden black;
+  background-color: burlywood;
 }
 
-.table-contentRow__age {
-  border: 1px solid black;
-}
-
-.table-contentRow__country {
-  border: 1px solid black;
-}
-
-.table-contentRow__color {
-  border: 1px solid black;
+.border {
+  background-color: rgb(11, 11, 11);
+  width: 4px;
+  height: 137px;
+  position: absolute;
+  top: 0;
 }
