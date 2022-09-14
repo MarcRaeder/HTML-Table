@@ -4,20 +4,20 @@
   height: 100%;
 }
 
-.table__headerRow {
+.table__header-Row {
   background-color: goldenrod;
   height: 50px;
 }
 
-.table__contentRow {
+.table__content-Row {
   border: 1px solid black;
   text-align: center;
 }
 
-.table-headerRow__body {
+.table__headerRow-body {
   border: 1px solid black;
 }
 
-.table-contentRow__body {
+.table__contentRow-body {
   border: 1px solid black;
 }
