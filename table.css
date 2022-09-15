@@ -19,18 +19,9 @@
   border: 1px solid black;
 }
 
-.table-contentRow__name {
+.table-contentRow__cell {
   border: 1px solid black;
-}
-
-.table-contentRow__age {
-  border: 1px solid black;
-}
-
-.table-contentRow__country {
-  border: 1px solid black;
-}
-
-.table-contentRow__color {
-  border: 1px solid black;
+  min-width: 100px;
+  border-left: 1px hidden black;
+  background-color: burlywood;
 }
