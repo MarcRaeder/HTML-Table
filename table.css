@@ -2,24 +2,23 @@
   border: 1px solid black;
   width: 100%;
   height: 100%;
-
 }
 
-.table__headerRow {
+.table__header-row {
   background-color: goldenrod;
   height: 50px;
 }
 
-.table__contentRow {
+.table__content-row {
   border: 1px solid black;
   text-align: center;
 }
 
-.table-headerRow__body {
+.table__header-row-cell {
   border: 1px solid black;
 }
 
-.table-contentRow__cell {
+.table__content-row-cell {
   border: 1px solid black;
   min-width: 100px;
   border-left: 1px hidden black;
