@@ -2,8 +2,8 @@ const border = document.querySelectorAll(".border");
 const columns = document.querySelectorAll(".table-headerRow__body")
 const table = document.querySelector(".table");
 
-function ShowHide(columnId) {
-  let columnData = document.querySelectorAll("#" + columnId);
+function ShowHide(columnClass) {
+  let columnData = document.querySelectorAll("." + columnClass);
   CheckIfShowOrHide(columnData);
 }
 

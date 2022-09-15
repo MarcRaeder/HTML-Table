@@ -9,34 +9,34 @@
   <body>
     <table class="table">
       <tr class="table__headerRow">
-        <th id=name onclick="ShowHide(this.id)" class="table-headerRow__body">Name</th>
-        <th id=age onclick="ShowHide(this.id)" class="table-headerRow__body">Age</th>
-        <th id=country onclick="ShowHide(this.id)" class="table-headerRow__body">Country</th>
-        <th id=color onclick="ShowHide(this.id)" class="table-headerRow__body">Color</th>
+        <th onclick="ShowHide('name')" class="table-headerRow__body name">Name</th>
+        <th onclick="ShowHide('age')" class="table-headerRow__body">Age</th>
+        <th onclick="ShowHide('country')" class="table-headerRow__body">Country</th>
+        <th onclick="ShowHide('color')" class="table-headerRow__body">Color</th>
       </tr>
       <tr class="table__contentRow">
-        <td id=name class="table-contentRow__cell">Marc</td>
-        <td id=age class="table-contentRow__cell">21</td>
-        <td id=country class="table-contentRow__cell">Germany</td>
-        <td id=color class="table-contentRow__cell">Blue</td>
+        <td class="table-contentRow__cell name">Marc</td>
+        <td class="table-contentRow__cell age">21</td>
+        <td class="table-contentRow__cell country">Germany</td>
+        <td class="table-contentRow__cell color">Blue</td>
       </tr>
       <tr class="table__contentRow">
-        <td id=name class="table-contentRow__cell">Bob</td>
-        <td id=age class="table-contentRow__cell">6</td>
-        <td id=country class="table-contentRow__cell">England</td>
-        <td id=color class="table-contentRow__cell">Red</td>
+        <td class="table-contentRow__cell name">Bob</td>
+        <td class="table-contentRow__cell age">6</td>
+        <td class="table-contentRow__cell country">England</td>
+        <td class="table-contentRow__cell color">Red</td>
       </tr>
       <tr class="table__contentRow">
-        <td id=name class="table-contentRow__cell">Harald</td>
-        <td id=age class="table-contentRow__cell">30</td>
-        <td id=country class="table-contentRow__cell">Norway</td>
-        <td id=color class="table-contentRow__cell">Yellow</td>
+        <td class="table-contentRow__cell name">Harald</td>
+        <td class="table-contentRow__cell age">30</td>
+        <td class="table-contentRow__cell country">Norway</td>
+        <td class="table-contentRow__cell color">Yellow</td>
       </tr>
       <tr class="table__contentRow">
-        <td id=name class="table-contentRow__cell">Peter</td>
-        <td id=age class="table-contentRow__cell">50</td>
-        <td id=country class="table-contentRow__cell">USA</td>
-        <td id=color class="table-contentRow__cell">Green</td>
+        <td class="table-contentRow__cell name">Peter</td>
+        <td class="table-contentRow__cell age">50</td>
+        <td class="table-contentRow__cell country">USA</td>
+        <td class="table-contentRow__cell color">Green</td>
       </tr>
     </table>
     <div onmousedown="dragstart(event, 0)" class="border"></div>
