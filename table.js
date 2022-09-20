@@ -1,9 +1,5 @@
-function ShowHide(columnClass) {
+function showHideData(columnClass) {
   let columnData = document.querySelectorAll("." + columnClass);
-  CheckIfShowOrHide(columnData);
-}
-
-function CheckIfShowOrHide(columnData) {
   columnData.forEach((data) => {
     if (data.style.color != "transparent") {
       data.style.color = "transparent";
