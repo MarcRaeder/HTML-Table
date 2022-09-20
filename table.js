@@ -2,12 +2,8 @@ const border = document.querySelectorAll(".border");
 const columns = document.querySelectorAll(".table__header-row-cell")
 const table = document.querySelector(".table");
 
-function ShowHide(columnClass) {
+function showHideData(columnClass) {
   let columnData = document.querySelectorAll("." + columnClass);
-  CheckIfShowOrHide(columnData);
-}
-
-function CheckIfShowOrHide(columnData) {
   columnData.forEach((data) => {
     if (data.style.color != "transparent") {
       data.style.color = "transparent";
