@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
     <link rel="stylesheet" href="table.css">
     <title>HTML_table</title>
@@ -8,35 +7,35 @@
 
   <body>
     <table class="table">
-      <tr class="table__headerRow">
-        <th onclick="ShowHide('name')" class="table-headerRow__body name">Name</th>
-        <th onclick="ShowHide('age')" class="table-headerRow__body">Age</th>
-        <th onclick="ShowHide('country')" class="table-headerRow__body">Country</th>
-        <th onclick="ShowHide('color')" class="table-headerRow__body">Color</th>
+      <tr class="table__header-row">
+        <th onclick="ShowHide('name')" class="table__header-row-cell">Name</th>
+        <th onclick="ShowHide('age')" class="table__header-row-cell">Age</th>
+        <th onclick="ShowHide('country')" class="table__header-row-cell">Country</th>
+        <th onclick="ShowHide('color')" class="table__header-row-cell">Color</th>
       </tr>
-      <tr class="table__contentRow">
-        <td class="table-contentRow__cell name">Marc</td>
-        <td class="table-contentRow__cell age">21</td>
-        <td class="table-contentRow__cell country">Germany</td>
-        <td class="table-contentRow__cell color">Blue</td>
+      <tr class="table__content-row">
+        <td class="table__content-row-cell name">Marc</td>
+        <td class="table__content-row-cell age">21</td>
+        <td class="table__content-row-cell country">Germany</td>
+        <td class="table__content-row-cell color">Blue</td>
       </tr>
-      <tr class="table__contentRow">
-        <td class="table-contentRow__cell name">Bob</td>
-        <td class="table-contentRow__cell age">6</td>
-        <td class="table-contentRow__cell country">England</td>
-        <td class="table-contentRow__cell color">Red</td>
+      <tr class="table__content-row">
+        <td class="table__content-row-cell name">Bob</td>
+        <td class="table__content-row-cell age">6</td>
+        <td class="table__content-row-cell country">England</td>
+        <td class="table__content-row-cell color">Red</td>
       </tr>
-      <tr class="table__contentRow">
-        <td class="table-contentRow__cell name">Harald</td>
-        <td class="table-contentRow__cell age">30</td>
-        <td class="table-contentRow__cell country">Norway</td>
-        <td class="table-contentRow__cell color">Yellow</td>
+      <tr class="table__content-row">
+        <td class="table__content-row-cell name">Harald</td>
+        <td class="table__content-row-cell age">30</td>
+        <td class="table__content-row-cell country">Norway</td>
+        <td class="table__content-row-cell color">Yellow</td>
       </tr>
-      <tr class="table__contentRow">
-        <td class="table-contentRow__cell name">Peter</td>
-        <td class="table-contentRow__cell age">50</td>
-        <td class="table-contentRow__cell country">USA</td>
-        <td class="table-contentRow__cell color">Green</td>
+      <tr class="table__content-row">
+        <td class="table__content-row-cell name">Peter</td>
+        <td class="table__content-row-cell age">50</td>
+        <td class="table__content-row-cell country">USA</td>
+        <td class="table__content-row-cell color">Green</td>
       </tr>
     </table>
     <div onmousedown="dragstart(event, 0)" class="border"></div>
@@ -44,5 +43,4 @@
     <div onmousedown="dragstart(event, 2)" class="border"></div>
   </body>
   <script src="table.js"></script>
-
 </html>

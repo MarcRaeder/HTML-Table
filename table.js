@@ -1,5 +1,5 @@
 const border = document.querySelectorAll(".border");
-const columns = document.querySelectorAll(".table-headerRow__body")
+const columns = document.querySelectorAll(".table__header-row-cell")
 const table = document.querySelector(".table");
 
 function ShowHide(columnClass) {
