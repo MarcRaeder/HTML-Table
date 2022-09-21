@@ -20,4 +20,7 @@
 
 .table__content-row-cell {
   border: 1px solid black;
+  min-width: 100px;
+  border-left: 1px hidden black;
+  background-color: burlywood;
 }
