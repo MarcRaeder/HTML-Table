@@ -16,6 +16,7 @@ body {
 }
 
 .table__content-row {
+  border: 1px solid black;
   text-align: center;
 }
 
@@ -29,6 +30,7 @@ body {
   min-width: 100px;
   border-left: 1px hidden black;
   background-color: burlywood;
+
 }
 
 .border {
