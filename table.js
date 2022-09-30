@@ -36,9 +36,9 @@ function resize() {
 
 document.getElementsByTagName("BODY")[0].onresize = () => resize();
 
-function dragstart(event, borderNumber) {
+function dragStart(event, borderNumber) {
   const minWidth = 100;
-  const mousestart = event.clientX;
+  const mouseStart = event.clientX;
   var borderNum = borderNumber;
   var leftColumn = columns[borderNum];
   var leftColumnWidth = columns[borderNum].offsetWidth;
@@ -52,20 +52,20 @@ function dragstart(event, borderNumber) {
     }
   }
 
-  function mousemove(event) {
-    var mouseend = event.clientX;
-    var mouseDifference = mousestart - mouseend;
-    var leftborder = leftColumnWidth < minWidth && event.clientX >= (previousColumsWidth + minWidth);
+  function mouseMove(event) {
+    var mouseEnd = event.clientX;
+    var mouseDifference = mouseStart - mouseEnd;
+    var leftBorder = leftColumnWidth < minWidth && event.clientX >= (previousColumsWidth + minWidth);
     var outOfBorder = event.clientX < (previousColumsWidth + minWidth) || event.clientX > (previousColumsWidth + leftColumnWidth + (rightColumnWidth - minWidth));
-    var rightborder = rightColumnWidth < minWidth && event.clientX <= (previousColumsWidth + leftColumnWidth + minWidth);
+    var rightBorder = rightColumnWidth < minWidth && event.clientX <= (previousColumsWidth + leftColumnWidth + minWidth);
 
-    if (leftborder) {
-      border[borderNum].style.left = `${mouseend}px`;
+    if (leftBorder) {
+      border[borderNum].style.left = `${mouseEnd}px`;
       leftColumn.style.width = `${leftColumnWidth + mouseDifference}px`;
       rightColumn.style.width = `${rightColumnWidth - mouseDifference}px`;
     }
-    else if (rightborder) {
-      border[borderNum].style.left = `${mouseend}px`;
+    else if (rightBorder) {
+      border[borderNum].style.left = `${mouseEnd}px`;
       leftColumn.style.width = `${leftColumnWidth - mouseDifference}px`;
       rightColumn.style.width = `${rightColumnWidth + mouseDifference}px`;
     }
@@ -73,14 +73,14 @@ function dragstart(event, borderNumber) {
       return false;
     }
     else {
-      border[borderNum].style.left = `${mouseend}px`;
+      border[borderNum].style.left = `${mouseEnd}px`;
       leftColumn.style.width = `${leftColumnWidth - mouseDifference}px`;
       rightColumn.style.width = `${rightColumnWidth + mouseDifference}px`;
     }
   }
 
-  document.addEventListener("mousemove", mousemove);
+  document.addEventListener("mousemove", mouseMove);
   document.addEventListener("mouseup", (event) => {
-    document.removeEventListener("mousemove", mousemove)
+    document.removeEventListener("mousemove", mouseMove)
   })
 }
