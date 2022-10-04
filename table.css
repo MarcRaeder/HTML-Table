@@ -1,5 +1,10 @@
+body {
+  margin: 0;
+}
+
 .table {
   border: 1px solid black;
+  border-collapse: collapse;
   width: 100%;
   height: 100%;
 }
@@ -7,6 +12,7 @@
 .table__header-row {
   background-color: goldenrod;
   height: 50px;
+  min-width: 100px;
 }
 
 .table__content-row {
@@ -16,6 +22,7 @@
 
 .table__header-row-cell {
   border: 1px solid black;
+  border-left: 1px hidden black;
 }
 
 .table__content-row-cell {
@@ -23,4 +30,13 @@
   min-width: 100px;
   border-left: 1px hidden black;
   background-color: burlywood;
+
+}
+
+.border {
+  background-color: rgb(11, 11, 11);
+  width: 4px;
+  height: 137px;
+  position: absolute;
+  top: 0;
 }
